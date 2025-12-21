@@ -1,4 +1,3 @@
-Parfait ✅
 # 🧪 MLOps Lab 01 — Pipeline de Churn de bout en bout
 
 ## Objectif du lab
