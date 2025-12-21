@@ -62,7 +62,7 @@ pip install pandas numpy scikit-learn fastapi uvicorn joblib
 
 📸 **Screenshot – environnement activé et packages installés**
 
-> ![alt text](screenshots\lab1\1.png)
+> ![alt text](screenshots/lab1/1.png)
 
 ---
 
@@ -86,7 +86,7 @@ python src/generate_data.py
 
 📸 **Screenshot – aperçu du fichier raw.csv**
 
-> ![alt text](screenshots\lab1\2.png)
+> ![alt text](screenshots/lab1/2.png)
 
 ---
 
@@ -96,11 +96,11 @@ python src/generate_data.py
 
 📸 **Screenshot – fichier processed.csv**
 
-> ![alt text](screenshots\lab1\3.png)
+> ![alt text](screenshots/lab1/3.png)
 
 📸 **Screenshot – train_stats.json**
 
-> ![alt text](screenshots\lab1\4.png)
+> ![alt text](screenshots/lab1/4.png)
 
 ---
 
@@ -126,15 +126,15 @@ python src/train.py
 
 📸 **Screenshot – métriques affichées**
 
-> ![alt text](screenshots\lab1\5.png)
+> ![alt text](screenshots/lab1/5.png)
 
 📸 **Screenshot – dossier models/**
 
-> ![alt text](screenshots\lab1\6.png)
+> ![alt text](screenshots/lab1/6.png)
 
 📸 **Screenshot – current_model.txt**
 
-> ![alt text](screenshots\lab1\7.png)
+> ![alt text](screenshots/lab1/7.png)
 
 ---
 
@@ -159,11 +159,11 @@ python src/evaluate.py
 
 📸 **Screenshot – seuil optimal et F1**
 
-> ![alt text](screenshots\lab1\8.png)
+> ![alt text](screenshots/lab1/8.png)
 
 📸 **Screenshot – metadata.json**
 
-> ![alt text](screenshots\lab1\9.png)
+> ![alt text](screenshots/lab1/9.png)
 
 ---
 
@@ -193,8 +193,8 @@ GET http://127.0.0.1:8000/health
 
 📸 **Screenshot – endpoint /health**
 
-> ![alt text](screenshots\lab1\10.png)
-> ![alt text](screenshots\lab1\11.png)
+> ![alt text](screenshots/lab1/10.png)
+> ![alt text](screenshots/lab1/11.png)
 
 #### Prédiction
 
@@ -211,12 +211,12 @@ GET http://127.0.0.1:8000/health
 
 📸 **Screenshot – réponse /predict**
 
-> ![alt text](screenshots\lab1\12.png)
-> ![alt text](screenshots\lab1\13.png)
+> ![alt text](screenshots/lab1/12.png)
+> ![alt text](screenshots/lab1/13.png)
 
 📸 **Screenshot – logs/predictions.log**
 
-> ![alt text](screenshots\lab1\14.png)
+> ![alt text](screenshots/lab1/14.png)
 
 ---
 
@@ -240,7 +240,7 @@ python src/monitor_drift.py
 
 📸 **Screenshot – sortie drift check**
 
-> ![Valeurs z-score et alertes éventuelles](screenshots\lab1\15.png)
+> ![Valeurs z-score et alertes éventuelles](screenshots/lab1/15.png)
 
 ---
 
@@ -254,7 +254,7 @@ python -c "from src.train import main; main(version='v2', gate_f1=0.60)"
 
 📸 **Screenshot – entraînement v2**
 
-> ![Nouvelle entrée dans metadata.json](screenshots\lab1\16.png)
+> ![Nouvelle entrée dans metadata.json](screenshots/lab1/16.png)
 
 ---
 
@@ -276,8 +276,8 @@ python -c "from src.rollback import main; main('churn_model_v1_20251213_122625.j
 
 📸 **Screenshot – rollback effectué**
 
-> ![rollback](screenshots\lab1\17.png)
-> ![current_model.txt mis à jour](screenshots\lab1\18.png)
+> ![rollback](screenshots/lab1/17.png)
+> ![current_model.txt mis à jour](screenshots/lab1/18.png)
 
 
 ---
