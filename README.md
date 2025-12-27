@@ -8,7 +8,7 @@ Ce dépôt contient les compte-rendus et les captures d'écran des laboratoires 
 
 Pour consulter le compte-rendu détaillé, les étapes, les commandes exécutées et les captures d'écran du **Lab 1**, veuillez vous référer à :
 
-**[lab1.md](reports/lab1.md)**
+**[lab1.md](lab_reports/lab1.md)**
 
 ---
 
@@ -16,7 +16,7 @@ Pour consulter le compte-rendu détaillé, les étapes, les commandes exécutée
 
 Pour consulter les captures d'écran du **Lab 2**, veuillez vous référer à :
 
-**[lab2.md](reports/lab2.md)**
+**[lab2.md](lab_reports/lab2.md)**
 
 <!-- ---
 
