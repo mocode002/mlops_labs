@@ -35,51 +35,28 @@ RAW_PATH: Final[Path] = DATA_DIR / "raw.csv"
 PROCESSED_PATH: Final[Path] = DATA_DIR / "processed.csv"
 TRAIN_STATS_PATH: Final[Path] = ROOT / "registry" / "train_stats.json"
 # ---------------------------------------------------------------------------
-
 # Fonctions de validation / qualité des données
-
 # ---------------------------------------------------------------------------
 
-
-
-
-
 def data_quality_checks(df: pd.DataFrame) -> None:
-
     """
-
     Valide la qualité minimale du DataFrame d'entrée.
 
-
-
     Cette fonction lève une exception si :
-
     - des colonnes attendues sont manquantes ;
-
     - un champ présente plus de 5 % de valeurs nulles ;
-
     - certains champs supposés numériques ne le sont pas.
 
-
-
     Paramètres
-
     ----------
 
     df : pd.DataFrame
-
         Jeu de données à valider.
 
-
-
     Exceptions
-
     ----------
-
     ValueError
-
         Si le schéma ou les taux de valeurs manquantes ne sont pas conformes.
-
     """
 
     expected = {
@@ -98,6 +75,7 @@ def data_quality_checks(df: pd.DataFrame) -> None:
 
     }
 
+    print('preparing data')
 
 
     # Vérification de la présence de toutes les colonnes attendues
@@ -416,24 +394,13 @@ def main() -> None:
 
     stats = compute_numeric_stats(df_clean, numeric_cols=numeric_cols)
 
-
-
     TRAIN_STATS_PATH.parent.mkdir(parents=True, exist_ok=True)
 
     with TRAIN_STATS_PATH.open("w", encoding="utf-8") as f:
-
         json.dump(stats, f, indent=2)
 
-
-
     print(f"[OK] Fichier prétraité généré : {PROCESSED_PATH}")
-
     print(f"[OK] Statistiques d'entraînement générées : {TRAIN_STATS_PATH}")
 
-
-
-
-
 if __name__ == "__main__":
-
     main()
