@@ -28,5 +28,12 @@ Pour consulter le compte-rendu détaillé, les étapes réalisées, les commande
 
 ---
 
+## 📝 Lab 4 — Mise en place d’un pipeline CI/CD pour un projet Machine Learning
+
+Pour consulter le compte-rendu détaillé, les étapes réalisées, les commandes exécutées et les captures d'écran du **Lab 4**, veuillez vous référer à :
+
+**[lab4.md](lab_reports/lab4.md)**
+
+---
 
 > Chaque fichier `.md` contient les instructions étape par étape, les commandes exécutées, les résultats et les captures d'écran correspondantes.
