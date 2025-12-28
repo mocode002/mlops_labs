@@ -50,11 +50,21 @@ jobs:
         run: |
           python - << 'EOF'
           import json
-          from src.evaluate import compute_metrics
-          
+          from pathlib import Path
+
           threshold = float("${{ vars.F1_GATE_THRESHOLD }}")
-          metrics = compute_metrics()
-          f1 = metrics.get('f1', 0.0)
+          registry_path = Path("registry/metadata.json")
+
+          if not registry_path.exists():
+              raise SystemExit("Quality Gate échoué : registry/metadata.json introuvable")
+
+          with registry_path.open("r", encoding="utf-8") as f:
+              items = json.load(f)
+
+          # Take the last model entry
+          latest_metrics = items[-1]["metrics"]
+          f1 = float(latest_metrics.get("f1", 0.0))
+
           print(f"F1={f1} | seuil={threshold}")
           if f1 < threshold:
               raise SystemExit("Quality Gate échoué : F1 insuffisante")
