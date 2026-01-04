@@ -5,5 +5,5 @@ logs/
 models/
 data/*
 !data/*.dvc
-/models
+
 dvc_storage/
