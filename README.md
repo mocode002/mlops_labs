@@ -36,4 +36,12 @@ Pour consulter le compte-rendu détaillé, les étapes réalisées, les commande
 
 ---
 
+## 📝 Lab 5 — Du Notebook au Déploiement Conteneurisé d’un Modèle ML
+
+Pour consulter le compte-rendu du **Lab 5**, incluant les étapes réalisées et les **captures d’écran du déploiement Docker et Docker Compose de l’API churn**, veuillez vous référer à :
+
+**[lab5.md](lab_reports/lab5.md)**
+
+---
+
 > Chaque fichier `.md` contient les instructions étape par étape, les commandes exécutées, les résultats et les captures d'écran correspondantes.
