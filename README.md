@@ -44,4 +44,14 @@ Pour consulter le compte-rendu du **Lab 5**, incluant les étapes réalisées et
 
 ---
 
+---
+
+## 📝 Lab 6 — Déploiement K8s d’un système MLOps Churn
+
+Pour consulter le compte-rendu du **Lab 6**, incluant les étapes réalisées et les captures d’écran, veuillez vous référer à :
+
+**[lab6.md](lab_reports/lab6.md)**
+
+---
+
 > Chaque fichier `.md` contient les instructions étape par étape, les commandes exécutées, les résultats et les captures d'écran correspondantes.
