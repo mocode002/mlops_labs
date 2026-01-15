@@ -52,4 +52,12 @@ Pour consulter le compte-rendu du **Lab 6**, incluant les étapes réalisées et
 
 ---
 
+## 📝 Lab 7 — Gestion du cycle de vie des modèles avec MLflow
+
+Pour consulter le compte-rendu du **Lab 7**, incluant les étapes réalisées et les captures d’écran, veuillez vous référer à :
+
+**[lab7.md](lab_reports/lab7.md)**
+
+---
+
 > Chaque fichier `.md` contient les instructions étape par étape, les commandes exécutées, les résultats et les captures d'écran correspondantes.
